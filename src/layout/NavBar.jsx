@@ -5,19 +5,19 @@ const NavBar = () => {
         <nav>
         <ul>
             <li>
-            <NavLink to="/" end activeClassName="active">
+            <NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>
                 Home
             </NavLink>
             </li>
             
             <li>
-            <NavLink to="/about" activeClassName="active">
+            <NavLink to="/about" className={({isActive}) => isActive ? "active" : ""}>
                 About
             </NavLink>
             </li>
 
             <li>
-            <NavLink to="/contact" activeClassName="active">
+            <NavLink to="/contact" className={({isActive}) => isActive ? "active" : ""}>
                 Contact
             </NavLink>
             </li>
