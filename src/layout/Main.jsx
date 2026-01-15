@@ -1,9 +1,19 @@
+import {Routes, Route} from 'react-router-dom'; 
+import Home from '../pages/Home.jsx';
+import About from '../pages/About.jsx';
+import Contact from '../pages/Contact.jsx';
+
 const Main = () => {
     return (
         <main>
-        <h1>Welcome to the Main Layout</h1>
-        {/* Additional content can go here */}
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='*' element={<h2>404 - Page Not Found</h2>} />
+            </Routes>
         </main>
     );
-    }
+}
+
 export default Main;
