@@ -2,7 +2,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from '../pages/Home.jsx';
 import About from '../pages/About.jsx';
 import Contact from '../pages/Contact.jsx';
-import { useAuth, logout } from '../Context/AuthContext.jsx';
+import { useAuth, logout, login } from '../Context/AuthContext.jsx';
 import Profile from '../pages/Profile.jsx';
 
 const Main = () => {
